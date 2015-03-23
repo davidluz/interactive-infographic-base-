@@ -1,104 +1,119 @@
-﻿
+<meta charset="UTF-8">
 
+<!--Dependências -->
+<script src="js/jquery.js"></script>
+<script src="js/phaser.min.js"></script>
+<script src="animations/animation1.js"></script>
+<script src="animations/animation2.js"></script>
+<script src="animations/animation3.js"></script>
+<script src="animations/animation4.js"></script>
+<script src="animations/animation5.js"></script>
+<script src="animations/animation6.js"></script>
+<script src="animations/animation7.js"></script>
+<script src="animations/animation8.js"></script>
+<script src="animations/animation9.js"></script>
+<script src="animations/animation10.js"></script>
+<script src="animations/animation11.js"></script>
+<script src="animations/animation12.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+<link rel="stylesheet" type="text/css" href="css/style.css"> 
+<!--Fim de dependências -->
+<!--div com header -->
 <div id="fundo-box"></div>
-<style>
+<!--Fim -->
 
-body{
-	background-color: #F9F9F9;
-}
-#ri-container{
-	margin: 0px;
-	padding: 0px;
-	max-width: 100%;
-	background-color: #F9F9F9;
-	font-family: "PT Sans";
+<!-------Container do Recurso interativo ----->
+<div id="ri-container"> 
+    <h1>Causas e prevenções de acidentes</h1>
+    <p>Veja as causas mais prováveis para os tipos de colisão e as sugestões de medidas para preveni-las, selecione as colisões abaixo.</p>
 
-}
+    <!--Bloco de conteúdo 1 -->
 
-#fundo-box{
-	width: 100%;
-	height: 5%;
-    background-image: url("imgs/fundo-box.png");
-    background-repeat: repeat-x;
-	
-}
+    <a class="fancybox" href="#ri-conteudo1">
+        <div id="bloco-de-conteudo-1" class="bloco-de-conteudo">
+            <div class="bloco-de-imagem"><h3>Colisão Lateral      </h3><div id="animation1"></div></div>
+            <div class="bloco-de-imagem"><h3>Colisão Transversal  </h3><div id="animation2"></div></div>
 
-.bloco-de-conteudo {
-    margin: 0px;
-	padding:0px;
-	width: 90%;
-	height: auto;
-	margin-top: 2%;
-	float: left;
-	background-color: #FFFFFF;
-	border: solid; 
-	border-width: 1px;
-	border-color: #D4D4D4;
+        </div>
+    </a>
 
-}	
+    <!--Bloco de conteúdo 2 -->
+    <a class="fancybox" href="#ri-conteudo2">
+    <div id="bloco-de-conteudo-2" class="bloco-de-conteudo">
 
-.bloco-de-imagem{
-   width: 30%;
-	float:left;
-	margin-left: 10px;
-	margin-bottom: 2%;
-}
+        <div class="bloco-de-imagem"><h3>Colisão Transversal  </h3><div id="animation3"></div></div>
+        <div class="bloco-de-imagem"><h3>Colisão Traseira  </h3><div id="animation4"></div></div>
+        <div class="bloco-de-imagem"><h3>Engavetamento  </h3><div id="animation5"></div></div>
+    </div>
+    </a>
+    
+    
+    <!--Bloco de conteúdo 3 -->
+    <a class="fancybox" href="#ri-conteudo3">
+    <div id="bloco-de-conteudo-3" class="bloco-de-conteudo">
 
-</style>
+        <div class="bloco-de-imagem"><h3>Colisão Traseira  </h3><div id="animation6"></div></div>
+        <div class="bloco-de-imagem"><h3>Engavetamento  </h3><div id="animation7"></div></div>
 
-    <div id="ri-container"> <!--Container do Recurso interativo -->
-	<h1>Infographic Title</h1>
-	<p>Lorem ipsum tiamed Lorem ipsum tiamed Lorem ipsum tiamed Lorem ipsum tiamed Lorem ipsum tiamed</p>
+    </div>
+    </a>
+    <!--Bloco de conteúdo 4 -->
+    
+    <a class="fancybox" href="#ri-conteudo4">
+    <div id="bloco-de-conteudo-4" class="bloco-de-conteudo">
 
-	<!--Bloco de conteúdo 1 -->
-	<div id="bloco-de-conteudo-1" class="bloco-de-conteudo">
-	<div class="bloco-de-imagem"><h3>Lorem ipsum tiamed  </h3><img src="imgs/item1.png"></div>
-	<div class="bloco-de-imagem"><h3>Lorem ipsum tiamed  </h3><img src="imgs/item1.png"></div>
-	<div class="bloco-de-imagem"><h3>Lorem ipsum tiamed  </h3><img src="imgs/item1.png"></div>
-	</div>
-	
-  <!--Bloco de conteúdo 2 -->
-	<div id="bloco-de-conteudo-2" class="bloco-de-conteudo">
+        <div class="bloco-de-imagem"><h3>Colisão Frontal  </h3><div id="animation8"></div></div>
+        <div class="bloco-de-imagem"><h3>Choque com Objeto Fixo  </h3><div id="animation9"></div></div>
 
-			<div class="bloco-de-imagem"><h3>Lorem ipsum tiamed  </h3><img src="imgs/item1.png"></div>
-			<div class="bloco-de-imagem"><h3>Lorem ipsum tiamed  </h3><img src="imgs/item1.png"></div>
-			<div class="bloco-de-imagem"><h3>Lorem ipsum tiamed  </h3><img src="imgs/item1.png"></div>
-	</div>
+    </div>
+    </a>
+    <!--Bloco de conteúdo 5 -->
+    
+    <a class="fancybox" href="#ri-conteudo5">
+    <div id="bloco-de-conteudo-5" class="bloco-de-conteudo">
 
-  <!--Bloco de conteúdo 3 -->
-	<div id="bloco-de-conteudo-3" class="bloco-de-conteudo">
-	
-			<div class="bloco-de-imagem"><h3>Lorem ipsum tiamed  </h3><img src="imgs/item1.png"></div>
-			<div class="bloco-de-imagem"><h3>Lorem ipsum tiamed  </h3><img src="imgs/item1.png"></div>
-			<div class="bloco-de-imagem"><h3>Lorem ipsum tiamed  </h3><img src="imgs/item1.png"></div>
-	</div>
+        <div class="bloco-de-imagem"><h3>Capotagem   </h3><div id="animation10"></div></div>
+        <div class="bloco-de-imagem"><h3>Tombamento  </h3><div id="animation11"></div></div>
 
-	 <!--Bloco de conteúdo 4 -->
-	<div id="bloco-de-conteudo-3" class="bloco-de-conteudo">
-	
-			<div class="bloco-de-imagem"><h3>Lorem ipsum tiamed  </h3><img src="imgs/item1.png"></div>
-			<div class="bloco-de-imagem"><h3>Lorem ipsum tiamed  </h3><img src="imgs/item1.png"></div>
-			<div class="bloco-de-imagem"><h3>Lorem ipsum tiamed  </h3><img src="imgs/item1.png"></div>
-	</div>
+    </div>
+    </a>
+    <!--Bloco de conteúdo 6 -->
+    
+    <a class="fancybox" href="#ri-conteudo6">
+    <div id="bloco-de-conteudo-6" class="bloco-de-conteudo">
 
-	 <!--Bloco de conteúdo 5 -->
-	<div id="bloco-de-conteudo-3" class="bloco-de-conteudo">
-	
-			<div class="bloco-de-imagem"><h3>Lorem ipsum tiamed  </h3><img src="imgs/item1.png"></div>
-			<div class="bloco-de-imagem"><h3>Lorem ipsum tiamed  </h3><img src="imgs/item1.png"></div>
-			<div class="bloco-de-imagem"><h3>Lorem ipsum tiamed  </h3><img src="imgs/item1.png"></div>
-	</div>
+        <div class="bloco-de-imagem"><h3>Atropelamento</h3><div id="animation12"></div></div>
 
-	 <!--Bloco de conteúdo 6 -->
-	<div id="bloco-de-conteudo-3" class="bloco-de-conteudo">
+    </div>
+    </a>
 
-			<div class="bloco-de-imagem"><h3>Lorem ipsum tiamed  </h3><img src="imgs/item1.png"></div>
-			<div class="bloco-de-imagem"><h3>Lorem ipsum tiamed  </h3><img src="imgs/item1.png"></div>
-			<div class="bloco-de-imagem"><h3>Lorem ipsum tiamed  </h3><img src="imgs/item1.png"></div>
-	</div>
 
 
 
 </div>
 
-<script></script>
+<!-------Fim do Recurso interativo ----->
+
+<script>
+
+
+    $(".fancybox").fancybox({
+        openEffect: 'fade',
+        closeEffect: 'fade',
+        helpers: {
+            overlay: {
+                css: {
+                    'background': 'rgba(255, 255, 255, 0)'
+                }
+
+            }
+
+
+        }
+    });
+
+
+
+</script>
+
