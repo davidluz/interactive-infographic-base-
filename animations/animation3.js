@@ -17,8 +17,8 @@ function create() {
 	car6 = animation3.add.sprite(0, 70, 'car4');
 	car5.inputEnabled=true;
 	car6.inputEnabled= true;
-    var tween1 = animation3.add.tween(car5).to({ x: 0 }, 1500, Phaser.Easing.Linear.None, true, 0, 1000, false);
-    var tween2 = animation3.add.tween(car6).to({ y: 35 }, 1500, Phaser.Easing.Linear.None, true, 0, 1000, false);
+    var tween1 = animation3.add.tween(car5).to({ x: 0 }, 1500, Phaser.Easing.Linear.None, true, 0, 0, false);
+    var tween2 = animation3.add.tween(car6).to({ y: 35 }, 1500, Phaser.Easing.Linear.None, true, 0, 0, false);
     
 	
 	car5.events.onInputOver.add(over, this);

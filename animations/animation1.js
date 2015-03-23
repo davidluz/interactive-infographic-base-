@@ -18,8 +18,8 @@ function create() {
 	car1.inputEnabled=true;
 	car2.inputEnabled= true;
 	
-   var tween1 = animation1.add.tween(car1).to({ x: 20, y: 20 }, 800, Phaser.Easing.Linear.None, true, 0, 1000, false);
-   var tween2 = animation1.add.tween(car2).to({ x: 20 }, 800,        Phaser.Easing.Linear.None, true, 0, 1000, false);
+   var tween1 = animation1.add.tween(car1).to({ x: 20, y: 20 }, 800, Phaser.Easing.Linear.None, true, 0, 0, false);
+   var tween2 = animation1.add.tween(car2).to({ x: 20 }, 800,        Phaser.Easing.Linear.None, true, 0, 0, false);
 
 
 	
