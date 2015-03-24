@@ -30,8 +30,8 @@ function over(){
 	}
 	
 	function out(){
-	tween11.pause();
-	tween12.pause();
+	/*tween1.pause();
+	tween2.pause();*/
 	}
 
 

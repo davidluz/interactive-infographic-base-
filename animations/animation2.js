@@ -36,8 +36,8 @@ function create() {
 	}
 	
 	function out(){
-	tween1.pause();
-	tween2.pause();
+/*tween1.pause();
+	tween2.pause();*/
 	}
 
 }

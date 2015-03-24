@@ -32,7 +32,7 @@ function over(){
 	}
 	
 	function out(){
-	tween11.pause();
+	/*tween11.pause();*/
 	
 	}
 
