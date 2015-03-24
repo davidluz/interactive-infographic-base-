@@ -25,18 +25,14 @@ tween1.chain(tween2);
           {
 		
             tween3.start();
+			car_tombado.inputEnabled=false;
           }, this);
 
 
 
 
 function over(){
-var dontRepeat = 2;
-if(dontRepeat== 2){
 tween1.start();
-var dontRepeat = 1;
-}
-
 
 }
 

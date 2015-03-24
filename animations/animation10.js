@@ -22,6 +22,7 @@ tween_cap1.chain(tween_cap2);
 
   tween_cap2.onStart.add(function()
           {
+		            car_capotado.inputEnabled=false;
 		            tween_cap3.start();
           }, this);
 
